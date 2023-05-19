@@ -1,41 +1,7 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+Script.Parent.Touched:Connect(function()
+Local sign or idk = Game.ServerStorage.Model:clone()
+["sign or idk"].Parent = Workspace
+local original sign = game.workspace.sign -- the first sign evar
+Game.Workspace.["Sign or idk"].position = ["original sign"].position
+["original sign"]:destroy()
+end)
